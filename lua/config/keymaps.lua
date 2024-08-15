@@ -16,3 +16,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 -- Next and previous instance of the highlighted letter
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
+
+vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>")

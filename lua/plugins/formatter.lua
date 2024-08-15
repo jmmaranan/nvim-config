@@ -7,6 +7,7 @@ return {
       javascript = { "prettier" },
       yaml = { "prettier" },
       html = { "prettier" },
+      markdown = { "prettier" },
     },
   },
 }

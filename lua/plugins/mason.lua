@@ -9,6 +9,8 @@ return {
       "cfn-lint",
       "checkstyle",
       "google-java-format",
+      "prettier",
+      "templ",
     },
   },
 }
