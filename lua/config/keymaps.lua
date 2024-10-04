@@ -18,3 +18,11 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>")
+
+local toggle_bg =
+  [[:lua if vim.o.background == "dark" then vim.o.background = "light" else vim.o.background = "dark" end<CR>]]
+vim.keymap.set("n", "<leader>bg", toggle_bg)
+vim.keymap.set("n", "<leader>c1", ":colorscheme gruvbox<cr>")
+vim.keymap.set("n", "<leader>c2", ":colorscheme tokyonight<cr>")
+vim.keymap.set("n", "<leader>c3", ":colorscheme catppuccin<cr>")
+vim.keymap.set("n", "<leader>c4", ":colorscheme nord<cr>")
