@@ -1,3 +1,7 @@
+# Install
+
+Clone this repo to ~/.config/nvim
+
 # 💤 LazyVim
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
