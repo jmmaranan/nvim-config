@@ -21,8 +21,8 @@ vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<cr>")
 
 local toggle_bg =
   [[:lua if vim.o.background == "dark" then vim.o.background = "light" else vim.o.background = "dark" end<CR>]]
-vim.keymap.set("n", "<leader>bg", toggle_bg)
-vim.keymap.set("n", "<leader>c1", ":colorscheme gruvbox<cr>")
-vim.keymap.set("n", "<leader>c2", ":colorscheme tokyonight<cr>")
-vim.keymap.set("n", "<leader>c3", ":colorscheme catppuccin<cr>")
-vim.keymap.set("n", "<leader>c4", ":colorscheme nord<cr>")
+vim.keymap.set("n", "<leader>bg", toggle_bg, { desc = "Toggle Light or Dark Background", silent = true })
+vim.keymap.set("n", "<leader>c1", ":colorscheme gruvbox<cr>", { desc = "Change to Gruvbox Theme", silent = true })
+vim.keymap.set("n", "<leader>c2", ":colorscheme tokyonight<cr>", { desc = "Change to TokyoNight Theme", silent = true })
+vim.keymap.set("n", "<leader>c3", ":colorscheme catppuccin<cr>", { desc = "Change to Catppuccin Theme", silent = true })
+vim.keymap.set("n", "<leader>c4", ":colorscheme nord<cr>", { desc = "Change to Nord Theme", silent = true })
