@@ -26,3 +26,10 @@ vim.keymap.set("n", "<leader>c1", ":colorscheme gruvbox<cr>", { desc = "Change t
 vim.keymap.set("n", "<leader>c2", ":colorscheme tokyonight<cr>", { desc = "Change to TokyoNight Theme", silent = true })
 vim.keymap.set("n", "<leader>c3", ":colorscheme catppuccin<cr>", { desc = "Change to Catppuccin Theme", silent = true })
 vim.keymap.set("n", "<leader>c4", ":colorscheme nord<cr>", { desc = "Change to Nord Theme", silent = true })
+
+vim.keymap.set({ "n", "v" }, "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true })
+vim.keymap.set("v", "ga", "<cmd>CodeCompanionChat Add<cr>", { noremap = true, silent = true })
+
+-- Expand 'cc' into 'CodeCompanion' in the command line
+vim.cmd([[cab cc CodeCompanion]])
