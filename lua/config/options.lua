@@ -38,4 +38,3 @@ vim.opt.pumblend = 0
 
 vim.opt.background = "dark"
 vim.opt.completeopt = "popup"
-vim.g.copilot_no_tab_map = true

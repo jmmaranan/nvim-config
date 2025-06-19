@@ -4,7 +4,8 @@ return {
     -- Event to trigger linters
     events = { "BufWritePost", "BufReadPost", "InsertLeave" },
     linters_by_ft = {
-      java = { "checkstyle" },
+      rb = { "rubocop" },
+      js = { "eslint" },
     },
   },
 }
